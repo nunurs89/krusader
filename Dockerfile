@@ -1,10 +1,10 @@
   
 FROM djaydev/krusader:latest
 RUN apk add --no-cache make
-RUN wget http://www.rarlab.com/rar/rarlinux-5.4.0.tar.gz && \
-	tar -xzvf rarlinux-5.4.0.tar.gz && \
+RUN wget http://www.rarlab.com/rar/rarlinux-5.7.1.tar.gz && \
+	tar -xzvf rarlinux-5.7.1.tar.gz && \
 	cd rar && \
 	make && \
-	mv rar_static /usr/local/bin/rar
+	mv rar /usr/local/bin/rar
 
 
